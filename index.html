@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    padding: 24px;
+  }
+  .card {
+    background: white;
+    padding: 36px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+  }
+  h1 {
+    margin: 0 0 24px;
+    font-size: 20px;
+    color: #1a1a1a;
+  }
+  a.link-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    color: #1a1a1a;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.15s ease, transform 0.1s ease;
+    text-align: left;
+  }
+  a.link-btn:last-child { margin-bottom: 0; }
+  a.link-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-1px);
+  }
+  a.link-btn:active { transform: translateY(0); }
+  .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+  }
+  .yt { background: #ff0000; color: white; }
+  .db { background: #0061fe; color: white; }
+  .label small {
+    display: block;
+    font-weight: 400;
+    color: #888;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Elige un video</h1>
+    <a class="link-btn" href="https://youtube.com/shorts/yPKS6gDkT2k?si=FQazOCoqgQyOfI5f" target="_blank" rel="noopener">
+      <div class="icon yt">▶</div>
+      <div class="label">YouTube Shorts<small>Ver en YouTube</small></div>
+    </a>
+    <a class="link-btn" href="https://www.dropbox.com/scl/fi/4ib1tr4suzy0dwheuwds3/VID-20260626-WA0045.mp4?rlkey=zemv84s0otouxbrqzm1yvplt8&st=2z8swbrd&dl=0" target="_blank" rel="noopener">
+      <div class="icon db">⬇</div>
+      <div class="label">Dropbox<small>VID-20260626-WA0045.mp4</small></div>
+    </a>
+  </div>
+</body>
+</html>
